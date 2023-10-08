@@ -6,7 +6,7 @@
 /*   By: mhajji-b <mhajji-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 19:19:38 by mhajji-b          #+#    #+#             */
-/*   Updated: 2023/08/14 11:24:37 by mhajji-b         ###   ########.fr       */
+/*   Updated: 2023/10/08 16:32:54 by mhajji-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	check_if_death(t_philo *philo)
 
 	pthread_mutex_lock(&philo->eat);
 	actual = ft_get_time();
-	if (actual - philo->last_meal >= philo->data->time_to_die)
+	if (actual - philo->last_meal > philo->data->time_to_die)
 	{
 		printf(DEAD, ft_get_time() - philo->data->t_jour, philo->philo_id + 1);
 		pthread_mutex_lock(&philo->death_mutex);
