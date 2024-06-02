@@ -13,3 +13,5 @@ To see that a proper solution to this problem is not obvious, consider a proposa
 * put the right fork down;
 * repeat from the beginning.
 * However, they each will think for an undetermined amount of time and may end up holding a left fork thinking, staring at the right side of the plate, unable to eat because there is no right fork, until they starve.
+* ![Demo of the project](assets/Philosophers.gif)
+
